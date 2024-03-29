@@ -3,10 +3,13 @@ import{colors} from './src/util/Colors';
 import{Conta} from './src/model/Conta';
 import {ContaCorrente} from "./src/model/ContaCorrente";
 import {ContaPoupanca} from "./src/model/ContaPoupanca";
+import {ContaController} from "./src/controller/ContaController";
 
 export function main(){
  
     let opcao: number;
+
+    let contas: ContaController = new ContaController(); 
 
     const conta: Conta = new Conta(1, 123, 1, "Bianca", 10000);
     conta.visualizar();
