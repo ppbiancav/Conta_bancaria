@@ -15,6 +15,7 @@ export function main(){
     conta.depositar(2000);
     conta.visualizar();
     
+    //objeto da classe contacorrente "teste"
     const contacorrente: ContaCorrente = new ContaCorrente(2, 123, 1, "Bianca", 15000, 1000);
     contacorrente.visualizar();
     contacorrente.sacar(2000);
